@@ -30,8 +30,8 @@
 /* Navbar Margin Sizing Target */
 .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl 
 { 
-    margin-top: -10px; /* Reducing the top margin size */
-    margin-bottom: -10px; /* Reducing the bottom margin size */
+    margin-top: -24px; /* Reducing the top margin size */
+    margin-bottom: -23px; /* Reducing the bottom margin size */
 }
 
 /* Target the search container and components */
@@ -49,6 +49,24 @@
     font-size: 16pt; /* Larger font size for emphasis */
     color: #0f62fe !important; /* IBM primary blue color */
 }
+
+/* Navbar "Solutions Hub" pages color */
+.menu-text {
+    color: #525252;
+    font-weight: 400;
+}
+
+/* Navbar "Solutions Hub" pages color for when you hover over the option */
+.nav-item:hover {
+    background-color: #d1d1d1;
+}
+
+.nav-item {
+    margin-top: -5px;
+    margin-bottom: -7px;
+}
+
+
 
 /* Sidebar Active Item Highlight Styling */
 div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link, div.sidebar-item-container .sidebar-link > code {
@@ -88,7 +106,26 @@ div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link
 /* Navbar Brand Text Styling */
 .navbar-brand {
     color: black; /* Default color */
-    font-size: 18pt; /* Large font size */
+    font-size: 1rem; /* Large font size */
+    font-weight: 600;
+    letter-spacing: .1px;
+    -webkit-font-smoothin: antialiased;
+    border-left: #E9E9E9;
+    border-right: 1px solid #C6C6C6;
+    padding-right: 20px;
+}
+
+/* No border for the logo*/
+.navbar-brand-logo {
+    border-right: none;
+    padding-right: 0;
+    margin-right: none;
+}
+
+/* Navbar Logo Size */
+.navbar-logo {
+    max-height: 75px; /* Restrict the height of the logo */
+    //margin-left: -40px;
 }
 
 /* Navbar Brand Hover State */
@@ -120,6 +157,11 @@ div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link
 /* Autocomplete Search Form Width */
 .navbar .aa-Autocomplete .aa-Form {
     width: 250px; /* Fixed width for the search bar */
+    border-radius: .1rem;
+}
+
+#quarto-search input {
+    font-size: .75rem;
 }
 
 /* Body and Global Font Styling */
